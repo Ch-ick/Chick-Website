@@ -1,3 +1,5 @@
+![Profile](https://avatars.githubusercontent.com/u/211418356?v=4)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
