@@ -84,8 +84,39 @@ function App() {
         </section>
 
         <section id="download" className="section download-section">
-          <p>Download Chick app here:</p>
+          <h2>Download Chick app here:</h2>
           <button className="download-button">Download</button>
+        </section>
+
+        <section id="support" className="section support-section">
+          <h2>Support Chick</h2>
+          <p>If you enjoy using Chick, you can support development:</p>
+          <div className="support-links">
+            <a
+              href="https://www.paypal.com/paypalme/chickClient"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="support-link"
+            >
+              <img
+                src={require("./assets/paypal-button.png")}
+                alt="PayPal"
+                className="support-logo"
+              />
+            </a>
+            <a
+              href="https://www.patreon.com/c/ChickClient"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="support-link"
+            >
+              <img
+                src={require("./assets/patreon-button.png")}
+                alt="Patreon"
+                className="support-logo"
+              />
+            </a>
+          </div>
         </section>
       </div>
     </div>

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "KickFont";
+  src: url("./assets/fonts/kick-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -7,21 +14,62 @@
   padding: 20px;
 }
 
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  color: rgb(83, 252, 24);
+}
+
 .main-content {
+  flex: 1;
   max-width: 100%;
-  min-height: 100vh;
-  padding: 40px 30px;
+  padding: 0px 30px; /* remove top padding because we’ll offset instead */
   background-color: rgb(100, 100, 100);
-  padding-top: 75px;
   z-index: 999;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  /* NEW: move content below navbar */
+  margin-top: 80px; /* same as navbar height */
+  height: calc(100vh - 80px); /* ensure correct scroll area */
+  scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, Safari */
+.main-content::-webkit-scrollbar {
+  width: 20px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: #323232;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: #505050;
+}
+
+/* Firefox */
+.main-content {
+  scrollbar-width: auto;
+  scrollbar-color: #505050 #323232;
+}
+
+#home {
+  scroll-margin-top: 100px;
 }
 
 .navbar {
   position: fixed; /* make it stick */
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  height: 75px;
+  height: 80px;
   background-color: rgb(50, 50, 50);
   display: flex;
   align-items: center;
@@ -32,20 +80,30 @@
   z-index: 1000;
 }
 
+.navbar,
+.navbar-link,
+.navbar-title,
+h1,
+h2 {
+  font-family: "KickFont", sans-serif;
+}
+
 .navbar-left {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .navbar-logo {
-  height: 50px; /* adjust as needed */
-  margin-right: 10px;
+  height: 50px;
+  margin: auto 10px auto 0px;
 }
 
 .navbar-title {
-  font-size: 50px;
-  font-weight: bold;
-  color: rgb(83, 252, 24);
+  font-size: 50px !important;
+  font-weight: bold !important;
+  margin: auto 0px !important;
+  color: inherit;
 }
 
 .navbar-link {
@@ -60,7 +118,7 @@
 
 .navbar-link:hover {
   color: rgb(100, 255, 100);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .home-section {
@@ -81,7 +139,6 @@
 .home-section h1 {
   font-size: 3rem;
   margin: 0px;
-  color: rgb(83, 252, 24);
 }
 
 .home-section p {
@@ -117,7 +174,7 @@
 
 .guide-section {
   margin: 25px 0px;
-  padding: 60px 20px;
+  padding: 25px 0px;
   background-color: rgb(30, 30, 30);
   color: rgb(200, 200, 200);
   text-align: center;
@@ -160,7 +217,7 @@
 }
 
 .download-section {
-  padding: 80px 20px;
+  padding: 25px 0px;
   background-color: rgb(30, 30, 30);
   color: rgb(200, 200, 200);
   text-align: center;
@@ -175,6 +232,7 @@
 
 .download-button {
   font-size: 20px;
+  font-weight: bold;
   padding: 15px 40px;
   background-color: rgb(83, 252, 24);
   color: rgb(10, 10, 10);
@@ -186,5 +244,34 @@
 
 .download-button:hover {
   background-color: rgb(100, 255, 100);
+  transform: scale(1.05);
+}
+
+.support-section {
+  margin: 25px 0px;
+  text-align: center;
+  padding: 25px 0px;
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.support-links {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  gap: 20px; /* space between buttons */
+  flex-wrap: wrap; /* wrap if screen is too small */
+}
+
+.support-logo {
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.support-logo:hover {
   transform: scale(1.05);
 }

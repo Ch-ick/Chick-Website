@@ -4,10 +4,12 @@ import logo from "../assets/Chick_logo.png";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <img src={logo} alt="Chick Logo" className="navbar-logo" />
-        <span className="navbar-title">CHICK</span>
-      </div>
+      <a href="#home" className="navbar-link">
+        <div className="navbar-left">
+          <img src={logo} alt="Chick Logo" className="navbar-logo" />
+          <p className="navbar-title">CHICK</p>
+        </div>
+      </a>
       <div className="navbar-right">
         <a href="#home" className="navbar-link">
           Home
