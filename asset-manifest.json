@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Chick-Website/static/css/main.7057666f.css",
+    "main.js": "/Chick-Website/static/js/main.f39f5c64.js",
+    "static/js/453.2f001303.chunk.js": "/Chick-Website/static/js/453.2f001303.chunk.js",
+    "static/media/Chick_logo.png": "/Chick-Website/static/media/Chick_logo.d8de914dee0932c3949e.png",
+    "static/media/popup-example.png": "/Chick-Website/static/media/popup-example.2792f3074731f0aab7e7.png",
+    "static/media/patreon-button.png": "/Chick-Website/static/media/patreon-button.72344d5284ea90d93155.png",
+    "static/media/paypal-button.png": "/Chick-Website/static/media/paypal-button.1d9da8e61a1f9d314c51.png",
+    "static/media/kick-font.ttf": "/Chick-Website/static/media/kick-font.d2e0f6e027a1ba9b61b7.ttf",
+    "static/media/loginWindow.png": "/Chick-Website/static/media/loginWindow.303cdfbb617c9b50f3e6.png",
+    "static/media/mainWindow.png": "/Chick-Website/static/media/mainWindow.e214b3f4650e42993cfd.png",
+    "index.html": "/Chick-Website/index.html",
+    "main.7057666f.css.map": "/Chick-Website/static/css/main.7057666f.css.map",
+    "main.f39f5c64.js.map": "/Chick-Website/static/js/main.f39f5c64.js.map",
+    "453.2f001303.chunk.js.map": "/Chick-Website/static/js/453.2f001303.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7057666f.css",
+    "static/js/main.f39f5c64.js"
+  ]
+}
