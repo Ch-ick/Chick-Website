@@ -275,3 +275,10 @@ h2 {
 .support-logo:hover {
   transform: scale(1.05);
 }
+
+.home-section,
+.guide-section,
+.download-section,
+.support-section {
+  max-width: 875px;
+}
