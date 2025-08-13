@@ -43,14 +43,14 @@ function App() {
               </div>
             </div>
             <div className="home-images-row">
-              <div className="right-column">
+              <div className="left-column">
                 <img
                   src={popupImage}
                   alt="Chick main window"
                   className="popup-image"
                 />
               </div>
-              <div className="left-column">
+              <div className="right-column">
                 <img
                   src={settingsWindowImage}
                   alt="Chick settings window"
