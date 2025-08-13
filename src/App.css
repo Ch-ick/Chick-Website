@@ -165,11 +165,11 @@ h2 {
 
 .left-column,
 .right-column {
-  flex: 1; /* each column takes equal space */
-  display: flex; /* make it a flex container */
-  justify-content: center; /* center horizontally */
-  align-items: center; /* center vertically */
-  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  flex: 0 0 auto;
 }
 
 .guide-section {
