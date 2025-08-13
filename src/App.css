@@ -1,38 +1,190 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-content {
+  max-width: 100%;
   min-height: 100vh;
+  padding: 40px 30px;
+  background-color: rgb(100, 100, 100);
+  padding-top: 75px;
+  z-index: 999;
+}
+
+.navbar {
+  position: fixed; /* make it stick */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px; /* adjust as needed */
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(83, 252, 24);
+}
+
+.navbar-link {
+  font-size: 20px;
+  color: rgb(83, 252, 24);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px;
+  transition: color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.navbar-link:hover {
+  color: rgb(100, 255, 100);
+  transform: scale(1.1);
+}
+
+.home-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 100%;
+  margin-top: 25px;
+  padding: 25px;
+  color: rgb(200, 200, 200);
+  background-color: rgb(30, 30, 30);
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  margin: 0px;
+  color: rgb(83, 252, 24);
+}
+
+.home-section p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.main-window-image,
+.login-window-image,
+.settings-window-image,
+.popup-image {
+  border: 2px solid rgb(83, 252, 24);
+  border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.home-images-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* each column takes equal space */
+  display: flex; /* make it a flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.guide-section {
+  margin: 25px 0px;
+  padding: 60px 20px;
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.guide-section h2 {
+  font-size: 32px;
+  color: rgb(83, 252, 24);
+  margin-bottom: 40px;
+}
+
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.guide-step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.step-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(83, 252, 24);
+  width: 40px;
+  height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 2px solid rgb(83, 252, 24);
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.download-section {
+  padding: 80px 20px;
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.download-section p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  font-size: 20px;
+  padding: 15px 40px;
+  background-color: rgb(83, 252, 24);
+  color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+  background-color: rgb(100, 255, 100);
+  transform: scale(1.05);
 }
