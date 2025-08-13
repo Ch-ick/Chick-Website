@@ -147,6 +147,17 @@ h2 {
   line-height: 1.6;
 }
 
+.home-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-images-row {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 0px;
+}
+
 .main-window-image,
 .login-window-image,
 .settings-window-image,
@@ -155,12 +166,6 @@ h2 {
   border-radius: 10px;
   max-width: 90%;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
-}
-
-.home-images-row {
-  display: flex;
-  flex-direction: row;
-  margin: 20px auto 0px;
 }
 
 .left-column,
