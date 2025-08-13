@@ -160,7 +160,7 @@ h2 {
 .home-images-row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin: 20px auto 0px;
 }
 
 .left-column,
@@ -169,7 +169,6 @@ h2 {
   display: flex; /* make it a flex container */
   justify-content: center; /* center horizontally */
   align-items: center; /* center vertically */
-  max-width: fit-content;
 }
 
 .guide-section {
