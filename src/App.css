@@ -280,7 +280,7 @@ h2 {
 .guide-section,
 .download-section,
 .support-section {
-  width: 925px !important;
+  max-width: 875px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
