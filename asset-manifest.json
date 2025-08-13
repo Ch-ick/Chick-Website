@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Chick-Website/static/css/main.dcd9248b.css",
+    "main.css": "/Chick-Website/static/css/main.1e27239d.css",
     "main.js": "/Chick-Website/static/js/main.2c7f32ef.js",
     "static/js/453.2f001303.chunk.js": "/Chick-Website/static/js/453.2f001303.chunk.js",
     "static/media/Chick_logo.png": "/Chick-Website/static/media/Chick_logo.d8de914dee0932c3949e.png",
@@ -11,12 +11,12 @@
     "static/media/loginWindow.png": "/Chick-Website/static/media/loginWindow.303cdfbb617c9b50f3e6.png",
     "static/media/mainWindow.png": "/Chick-Website/static/media/mainWindow.e214b3f4650e42993cfd.png",
     "index.html": "/Chick-Website/index.html",
-    "main.dcd9248b.css.map": "/Chick-Website/static/css/main.dcd9248b.css.map",
+    "main.1e27239d.css.map": "/Chick-Website/static/css/main.1e27239d.css.map",
     "main.2c7f32ef.js.map": "/Chick-Website/static/js/main.2c7f32ef.js.map",
     "453.2f001303.chunk.js.map": "/Chick-Website/static/js/453.2f001303.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcd9248b.css",
+    "static/css/main.1e27239d.css",
     "static/js/main.2c7f32ef.js"
   ]
 }
