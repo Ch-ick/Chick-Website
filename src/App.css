@@ -164,7 +164,7 @@ h2 {
 .popup-image {
   border: 2px solid rgb(83, 252, 24);
   border-radius: 10px;
-  max-width: 80%;
+  max-width: 100%;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
 }
 
