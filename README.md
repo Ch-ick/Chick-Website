@@ -5,6 +5,8 @@
 Chick is a chat client for [Kick.com](https://kick.com), inspired by Chatty for Twitch.  
 It allows you to connect to streams, read chat messages in real time, and interact seamlessly with Kick’s chat ecosystem.
 
+**Website** [https://ch-ick.github.io/Chick-Website/](https://ch-ick.github.io/Chick-Website/)
+
 ## Features
 
 - Connect to Kick.com streams via OAuth
