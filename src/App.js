@@ -86,7 +86,7 @@ function App() {
         <section id="download" className="section download-section">
           <h2>Download Chick app here:</h2>
           <a
-            href="https://github.com/Ch-ick/Chick-Website/releases/tag/v0.1"
+            href="https://github.com/Ch-ick/Chick-Website/releases/tag/v0.0.1"
             target="_blank"
             rel="noopener noreferrer"
           >
